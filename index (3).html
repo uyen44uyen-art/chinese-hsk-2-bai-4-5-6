@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luyện gõ HSK 2 – Bài 4, 5, 6 (340 câu)</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.26.0/dist/index.js"></script>
+<style>
+:root{--bg:#f2f5f7;--card:#fff;--ink:#14232e;--mute:#5b6b76;--line:#d5dde3;--acc:#0f6b6b;--seal:#c23b3b;--ok:#1f7a45;--okbg:#e3f3ea;--badbg:#fbe6e6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a21;--card:#17252e;--ink:#e8eef2;--mute:#9aaab5;--line:#2c3e49;--acc:#4fc3c3;--seal:#ef6b6b;--ok:#5fd18c;--okbg:#17372a;--badbg:#3a1f22}}
+:root[data-theme="dark"]{--bg:#0f1a21;--card:#17252e;--ink:#e8eef2;--mute:#9aaab5;--line:#2c3e49;--acc:#4fc3c3;--seal:#ef6b6b;--ok:#5fd18c;--okbg:#17372a;--badbg:#3a1f22}
+html{scroll-padding-top:150px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Noto Sans SC",system-ui,"PingFang SC","Microsoft YaHei",sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px 14px 64px}
+h1{font:900 clamp(1.6rem,6vw,2.4rem)/1.15 "Noto Serif SC",serif;margin:6px 0 2px}
+.sub{color:var(--mute);margin:0 0 10px;font-size:.9rem}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);z-index:5}
+.row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.row label{cursor:pointer;display:flex;gap:6px;align-items:center}
+.sc{margin-left:auto;font-weight:700;color:var(--acc)}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-top:8px;padding-bottom:4px}
+.tabs button{flex:none;font:inherit;font-size:.9rem;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:3px 12px;border-radius:16px}
+.tabs button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+:focus-visible{outline:3px solid var(--seal);outline-offset:2px}
+h2{font:600 1.15rem "Noto Serif SC",serif;margin:18px 0 4px;padding-left:12px;border-left:5px solid var(--seal)}
+.note{color:var(--mute);font-size:.9rem;margin:0 0 10px 17px}
+.bankw{margin:0 0 12px 17px;font-size:1.1rem;color:var(--acc)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:8px 0}
+.q.ok{background:var(--okbg);border-color:var(--ok)}
+.q.bad{background:var(--badbg);border-color:var(--seal)}
+.n{color:var(--mute);font-size:.8rem;margin-right:6px}
+.pr{font-size:1.05rem}
+.vi{color:var(--mute);font-size:.92rem}
+.hz{font:600 1.25rem "Noto Serif SC",serif}
+.q input{width:100%;margin-top:6px;font:1.25rem "Noto Sans SC",sans-serif;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.py,.an{display:none;margin-top:6px;padding:8px 10px;border-radius:6px;background:var(--bg)}
+.py{color:var(--acc)}
+.an .hz{color:var(--ok)}.an .p2{color:var(--acc);font-size:1.05rem}.an .mn{font-weight:700}.an .gl{color:var(--mute);font-size:.85rem;margin-top:2px}.rvb,.rst{font:inherit;font-size:.8rem;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--mute);padding:2px 10px;border-radius:12px;margin-top:6px}.rst{margin:0}
+body.spy .py.opt{display:block}
+body.san .an,.q.rv .an{display:block}
+.req{display:block}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:0 10px;margin:2px 4px 2px 0;font-size:1.15rem}
+.blank{display:inline-block;min-width:3em;border-bottom:2px solid var(--seal)}
+</style>
+</head>
+<body>
+<main>
+<h1>Luyện gõ HSK 2 · Bài 4–6</h1>
+<p class="sub">340 câu (Bài 4–6 và Bài 7). Gõ chữ Hán vào ô (dùng bộ gõ pinyin), đúng sẽ tự chuyển xanh. Enter để chấm. Tiến độ tự lưu trên trình duyệt này. Bấm “👁 Đáp án” ở mỗi câu để xem chữ Hán + pinyin + nghĩa.</p>
+<div class="bar">
+<div class="row"><label><input type="checkbox" id="tpy"> Hiện pinyin</label><label><input type="checkbox" id="tan"> Hiện đáp án</label><button class="rst" id="rst" type="button">Xóa tiến độ</button><span class="sc" id="sc"></span></div>
+<div class="tabs" id="tabs"></div>
+</div>
+<div id="app"></div>
+</main>
+<script>
+const L1="生日|sinh nhật;快乐|vui vẻ;给|cho;接|nhận/đón;晚上|buổi tối;问|hỏi;非常|rất;开始|bắt đầu;已经|đã;长|dài;两|hai;帮|giúp;介绍|giới thiệu;外面|bên ngoài;准备|chuẩn bị;就|thì/liền;鱼|cá;吧|nhé/đi;件|lượng từ cho quần áo;还|còn/cũng;可以|có thể;不错|không tệ;考试|thi/kỳ thi;意思|ý nghĩa;咖啡|cà phê;对|đối với/đúng;以后|sau này/sau đó;门|cửa;外|ngoài;自行车|xe đạp;羊肉|thịt cừu;好吃|ngon;面条|mì;打篮球|chơi bóng rổ;因为|bởi vì;所以|cho nên;游泳|bơi;经常|thường xuyên;公斤|kilogram;姐姐|chị gái".split(";").map(x=>x.split("|"));
+const S2="今天是我的生日。|生日快乐！|我给你打电话。|我晚上给你打电话。|他问我一个问题。|我非常快乐。|我开始学汉语了。|我已经吃饭了。|他已经来了。|这个东西很长。|我有两个朋友。|你能帮我吗？|我帮你买吧。|我给你介绍一个朋友。|他帮我介绍了一个朋友。|他在外面。|我准备去学校。|我准备去买东西。|就买这个吧。|我喜欢吃鱼。|我们吃鱼吧。|我买了一件衣服。|这件衣服不错。|这件衣服还可以。|我可以去吗？|明天有考试。|你准备好了吗？|这是什么意思？|我不喜欢喝咖啡。|咖啡对身体不好。|我以后想去中国。|他在门外。|门外有一辆自行车。|我喜欢吃羊肉。|这个羊肉非常好吃。|我想吃面条。|我们去打篮球吧。|我经常去游泳。|我姐姐经常游泳。|我姐姐喜欢打篮球。".split("|");
+const L3=[["Hôm nay là sinh nhật của tôi.",0],["Chúc mừng sinh nhật!",1],["Tôi rất vui.",5],["Buổi tối tôi gọi điện cho bạn.",3],["Tôi muốn hỏi bạn một câu hỏi.","我想问你一个问题。"],["Anh ấy đã đến rồi.",8],["Tôi đã ăn cơm rồi.",7],["Tôi bắt đầu học tiếng Trung rồi.",6],["Tôi có hai người bạn.",10],["Bạn có thể giúp tôi không?",11],["Tôi giúp bạn.","我帮你。"],["Anh ấy giúp tôi mua đồ.","他帮我买东西。"],["Tôi giới thiệu cho bạn một người bạn.",13],["Anh ấy ở bên ngoài.",15],["Tôi chuẩn bị đi học.",16],["Tôi chuẩn bị đi mua đồ.",17],["Vậy mua cái này đi.",18],["Tôi thích ăn cá.",19],["Chúng ta ăn cá nhé.",20],["Tôi mua một chiếc áo.",21],["Chiếc áo này không tệ.",22],["Chiếc áo này cũng được.",23],["Tôi có thể đi không?",24],["Ngày mai có kỳ thi.",25],["Bạn chuẩn bị xong chưa?",26],["Cái này có nghĩa là gì?",27],["Tôi thích uống cà phê.","我喜欢喝咖啡。"],["Tôi không thích uống cà phê.",28],["Sau này tôi muốn đến Trung Quốc.",30],["Anh ấy ở ngoài cửa.",31],["Ngoài cửa có một chiếc xe đạp.",32],["Đây là xe đạp của tôi.","这是我的自行车。"],["Tôi thích ăn thịt cừu.",33],["Thịt cừu này rất ngon.","这个羊肉很好吃。"],["Tôi muốn ăn mì.",35],["Chúng ta ăn mì nhé.","我们吃面条吧。"],["Tôi thích chơi bóng rổ.","我喜欢打篮球。"],["Chúng ta đi chơi bóng rổ nhé.",36],["Tôi thường xuyên đi bơi.",37],["Chị gái tôi thích bơi.","我姐姐喜欢游泳。"]];
+const L4="是/今天/我的/生日|今天是我的生日;非常/我/快乐|我非常快乐;晚上/我/电话/给/你/打|我晚上给你打电话;已经/他/来/了|他已经来了;已经/我/吃饭/了|我已经吃饭了;开始/我/汉语/学/了|我开始学汉语了;两个/我/朋友/有|我有两个朋友;帮/你/我/能/吗|你能帮我吗;我/他/帮/买/东西|他帮我买东西;朋友/我/一个/给/你/介绍|我给你介绍一个朋友;在/他/外面|他在外面;准备/我/学校/去|我准备去学校;买/就/这个/吧|就买这个吧;鱼/喜欢/我/吃|我喜欢吃鱼;鱼/吃/我们/吧|我们吃鱼吧;一件/我/衣服/买了|我买了一件衣服;衣服/这件/不错|这件衣服不错;还/这件/可以/衣服|这件衣服还可以;可以/我/吗/去|我可以去吗;明天/考试/有|明天有考试;意思/什么/是/这|这是什么意思;咖啡/我/喝/喜欢|我喜欢喝咖啡;以后/中国/我/去/想|我以后想去中国;门外/他/在|他在门外;自行车/门外/一辆/有|门外有一辆自行车;羊肉/我/吃/喜欢|我喜欢吃羊肉;非常/羊肉/好吃/这个|这个羊肉非常好吃;面条/我/吃/想|我想吃面条;游泳/经常/我/去|我经常去游泳;姐姐/篮球/我/打/喜欢|我姐姐喜欢打篮球|姐姐喜欢我打篮球|姐姐喜欢打篮球".split(";").map(x=>x.split("|"));
+const BANK="已经 非常 帮 介绍 准备 以后 经常 因为 所以 可以 开始 不错 意思 外面 姐姐";
+const L5="我_吃饭了。|已经;他_来了。|已经;这个羊肉_好吃。|非常;你能_我吗？|帮;他_我买东西。|帮;我给你_一个朋友。|介绍;我_去学校。|准备;我_学习汉语了。|开始;这件衣服_。|不错;这是什么意思？“意思”是_。|意思;他在_。|外面;我_想去中国。|以后;我_去游泳。|经常;她是我_。|姐姐;我_去吗？|可以;_今天下雨，我不去游泳了。|因为;因为今天下雨，_我不去游泳了。|所以;我_喝咖啡了。|已经;他_学汉语了。|开始;这个鱼_好吃。|非常;我_你问老师。|帮;我_考试。|准备;她_去游泳。|经常;_他很忙，所以他没来。|因为;因为他很忙，_他没来。|所以".split(";").map(x=>x.split("|"));
+const L6=["今天是姐姐的生日。","我给姐姐打电话。",8,"我已经吃了。","他帮我买了一件衣服。",13,16,"就买这件吧。",22,23,25,27,28,"以后我想去中国。",32,34,35,36,37,"我姐姐也喜欢游泳。","因为今天下雨，所以我不去了。","因为他很忙，所以他没来。","我们明天去游泳吧。","你可以帮我吗？","生日快乐，姐姐。"];
+const L7="Sinh nhật vui vẻ, chị gái!|生日快乐，姐姐！;Tôi tặng chị một chiếc áo.|我给姐姐一件衣服。;Buổi tối ai đến đón bạn?|晚上谁来接你？;Mẹ đến trường đón tôi.|妈妈去学校接我。;Tôi muốn hỏi thầy giáo một câu hỏi.|我想问老师一个问题。;Anh ấy rất thích uống cà phê.|他非常喜欢喝咖啡。;Mấy giờ bắt đầu thi?|几点开始考试？;Anh ấy đã đến trường rồi.|他已经去学校了。;Tóc của chị tôi rất dài.|我姐姐的头发很长。;Tôi có hai chiếc xe đạp.|我有两辆自行车。;Bạn giúp tôi một chút được không?|你可以帮我一下吗？;Để tôi giới thiệu một chút.|我来介绍一下。;Bên ngoài có người.|外面有人。;Tôi đã chuẩn bị xong rồi.|我已经准备好了。;Vậy bây giờ chúng ta đi thôi.|那我们现在就去吧。;Tôi mua hai cân cá.|我买了两公斤鱼。;Chiếc áo này không tệ, tôi còn muốn mua một chiếc nữa.|这件衣服不错，我还想买一件。;Tôi có thể uống cà phê không?|我可以喝咖啡吗？;Thi xong chúng ta đi bơi.|考试以后我们去游泳。;Chữ này có nghĩa là gì?|这个字是什么意思？;Bạn nói đúng.|你说得对。;Sau này bạn muốn làm gì?|以后你想做什么？;Cửa ở bên ngoài.|门在外面。;Ngoài cửa có một người.|门外有一个人。;Xe đạp của tôi ở ngoài cửa.|我的自行车在门外。;Thịt cừu ở đây rất ngon.|这儿的羊肉非常好吃。;Chị tôi thích ăn mì.|我姐姐喜欢吃面条。;Chủ nhật chúng ta đi chơi bóng rổ.|星期天我们去打篮球。;Vì tôi bận nên không đi bơi.|因为我很忙，所以不去游泳。;Bạn có thường uống cà phê không?|你经常喝咖啡吗？;Tôi muốn mua một cân thịt cừu.|我想买一公斤羊肉。;Hôm nay chị tôi rất vui.|今天我姐姐非常快乐。;Buổi tối tôi muốn ra ngoài ăn cơm.|晚上我想去外面吃饭。;Anh ấy đã bắt đầu chơi bóng rổ rồi.|他已经开始打篮球了。;Cái này không tệ, mua cái này đi.|这件不错，就买这件吧。;Mì ở đây rất ngon.|这里的面条很好吃。;Bạn có thể giới thiệu cho tôi một người bạn không?|你可以给我介绍一个朋友吗？;Bạn hỏi cô ấy đi.|你问她吧。;Vì ngày mai có thi nên tối nay tôi phải chuẩn bị.|因为明天有考试，所以我今天晚上要准备。;Thi xong, tôi cùng chị gái đi bơi.|考试以后，我和姐姐去游泳。".split(";").map(x=>x.split("|"));
+const BW="教室|phòng học;机场|sân bay;路|đường;离|cách;公司|công ty;远|xa;公共汽车|xe buýt;小时|tiếng/giờ;慢|chậm;快|nhanh;过|trải qua/tổ chức (sinh nhật);走|đi bộ/đi;到|đến".split(";").map(x=>x.split("|"));
+const W2="他还在教室学习呢。|我在去机场的路上。|你已经到了吗？|我还没到呢。|二十分钟就到。|你家离公司远吗？|我家离公司很远。|我家离学校不远。|他家离学校很远。|我坐公共汽车去公司。|坐公共汽车太慢了。|开车也不快。|路上车太多了。|我要一个小时。|我们走吧。|走十分钟就到。|我已经到公司了。|他还没到学校呢。|我们去机场吧。|他在教室呢。".split("|");
+const r2=v=>typeof v==="number"?W2[v]:v;
+const vn=A=>A.map(([v,r])=>{const[a,...alt]=r2(r).split("|");return{v,a,alt}});
+const pq=A=>A.map(r=>({a:r2(r),p:1}));
+const V3=[["Nhà bạn có xa công ty không?",5],["Nhà tôi rất xa công ty.",6],["Nhà tôi không xa trường học.",7],["Anh ấy vẫn đang ở trong lớp học.","他还在教室呢。|他还在教室。"],["Tôi đi đến sân bay.","我去机场。"],["Tôi đã đến sân bay rồi.","我已经到机场了。"],["Bạn đã đến chưa?","你到了吗？|你已经到了吗？"],["Tôi vẫn chưa đến.","我还没到呢。|我还没到。"],["20 phút nữa là đến.",4],["Tôi đi công ty bằng xe buýt.",9],["Xe buýt quá chậm.","公共汽车太慢了。"],["Đi xe cũng không nhanh.",11],["Trên đường có rất nhiều xe.","路上车太多了。|路上车很多。|路上有很多车。"],["Chúng ta đi thôi.",14],["Đi bộ 10 phút là đến.",15],["Công ty rất xa.","公司很远。"],["Sân bay rất xa.","机场很远。"],["Trường học không xa.","学校不远。"],["Tôi vẫn đang học.","我还在学习呢。|我还在学习。"],["Anh ấy vẫn đang ở công ty.","他还在公司呢。|他还在公司。"]];
+const V4=[["Nhà tôi cách trường học rất xa.","我家离学校很远。"],["Nhà tôi cách công ty không xa.","我家离公司不远。"],["Công ty cách nhà tôi rất xa.","公司离我家很远。"],["Trường học cách nhà tôi không xa.","学校离我家不远。"],["Sân bay cách nhà tôi rất xa.","机场离我家很远。"],["Nhà chị gái tôi cách công ty rất xa.","我姐姐家离公司很远。|我姐姐的家离公司很远。"],["Nhà bạn cách trường học có xa không?","你家离学校远吗？"],["Nhà anh ấy cách công ty có xa không?","他家离公司远吗？"],["Sân bay cách đây có xa không?","机场离这儿远吗？"],["Công ty cách đây không xa.","公司离这儿不远。"]];
+const P5="他还在学习呢。|我还在吃饭呢。|他还在教室呢。|姐姐还在公司呢。|他还没来呢。|我还没到呢。|他还没吃饭呢。|我还没去呢。".split("|");
+const P6="十分钟就到。|二十分钟就到。|我六点就起床。|他七点就来了。|我早上六点就起床。|走十分钟就到。|我明天就去。|他晚上就回来。".split("|");
+const S7="家/公司/我/离/很远|我家离公司很远;你/公司/家/离/远/吗|你家离公司远吗;学校/我家/离/不远|学校离我家不远|我家离学校不远;还/他/教室/在/呢|他还在教室呢;已经/我/到/了|我已经到了;还/我/到/没/呢|我还没到呢;公共汽车/我/坐/公司/去|我坐公共汽车去公司;太/公共汽车/慢/了|公共汽车太慢了;也/开车/不/快|开车也不快;车/路上/太多/了|路上车太多了;十分钟/到/就|十分钟就到;我们/吧/走|我们走吧;机场/去/我/要|我要去机场;公司/已经/他/到/了|他已经到公司了;学习/他/还/呢/在|他还在学习呢".split(";").map(x=>x.split("|"));
+const T8=["因为我家离公司很远，所以我坐公共汽车。","因为公共汽车太慢了，所以我走。","因为他还在学习，所以他没来。","因为明天有考试，所以他还在学习。"];
+const ref=v=>typeof v==="number"?S2[v]:v;
+const OV={"长":"cháng","还":"hái","对":"duì","给":"gěi"};
+const py=t=>{if(OV[t])return OV[t];try{return pinyinPro.pinyin(t)}catch(e){return""}};
+const PARTS=[
+{t:"1 · Từ",h:"Phần 1 · Pinyin → Hanzi (câu 1–40)",n:"Gõ từ vựng.",it:L1.map(([a,v])=>({a,v,p:1}))},
+{t:"2 · Câu pinyin",h:"Phần 2 · Pinyin → gõ cả câu (câu 41–80)",n:"Nhìn pinyin, gõ cả câu.",it:S2.map(a=>({a,p:1}))},
+{t:"3 · Tiếng Việt",h:"Phần 3 · Tiếng Việt → Hanzi (câu 81–120)",n:"Dịch sang chữ Hán.",it:L3.map(([v,r])=>({v,a:ref(r)}))},
+{t:"4 · Sắp xếp",h:"Phần 4 · Sắp xếp từ rồi gõ lại (câu 121–150)",n:"Xếp các từ thành câu đúng rồi gõ.",it:L4.map(([w,...a])=>({w:w.split("/"),a:a.length>1?a[0]:a[0],alt:a.slice(1)}))},
+{t:"5 · Điền từ",h:"Phần 5 · Điền từ + gõ cả câu (câu 151–175)",n:"Chọn từ thích hợp, gõ lại cả câu.",bank:BANK,it:L5.map(([s,w])=>({s,a:s.replace("_",w)}))},
+{t:"6 · Tổng hợp",h:"Phần 6 · Tổng hợp khó hơn (câu 176–200)",n:"Pinyin không dấu câu, gõ cả câu.",it:L6.map(r=>({a:ref(r),p:1}))},
+{t:"7 · Việt→Hán",h:"Phần 7 · Viết câu từ nghĩa tiếng Việt (Bài 4+5+6, câu 201–240)",n:"Câu mới, chỉ dùng từ vựng Bài 4–6. Tự viết bằng chữ Hán.",it:L7.map(([v,a])=>({v,a}))},
+{t:"B7 · Từ",h:"Bài 7 · Phần 1 · Pinyin → Hanzi (13 từ)",n:"你家离公司远吗？",it:BW.map(([a,v])=>({a,v,p:1}))},
+{t:"B7 · Câu",h:"Bài 7 · Phần 2 · Pinyin → gõ cả câu (14–33)",n:"Nhìn pinyin, gõ cả câu.",it:pq([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19])},
+{t:"B7 · Việt→Hán",h:"Bài 7 · Phần 3 · Tiếng Việt → tiếng Trung (34–53)",n:"Đọc nghĩa tiếng Việt, tự viết bằng chữ Hán.",it:vn(V3)},
+{t:"B7 · 离",h:"Bài 7 · Phần 4 · Cấu trúc 离 (54–63)",n:"A + 离 + B + 远/近: A cách B xa/gần.",it:vn(V4)},
+{t:"B7 · 还",h:"Bài 7 · Phần 5 · 还 = vẫn/còn (64–71)",n:"还 + 在 + V: vẫn đang làm. 还没 + V + 呢: vẫn chưa làm.",it:pq(P5)},
+{t:"B7 · 就",h:"Bài 7 · Phần 6 · 就 = đã/liền/sớm (72–79)",n:"Thời gian + 就 + V: chỉ/sớm... là đã làm.",it:pq(P6)},
+{t:"B7 · Sắp xếp",h:"Bài 7 · Phần 7 · Sắp xếp câu (80–94)",n:"Xếp các từ thành câu đúng rồi gõ.",it:S7.map(([w,a,...alt])=>({w:w.split("/"),a,alt}))},
+{t:"B7 · Tổng hợp",h:"Bài 7 · Phần 8 · Tổng hợp Bài 6 + 7 (95–100)",n:"因为……所以……",it:[...pq(T8.slice(0,3)),{a:T8[3],p:1},{v:"Vì nhà tôi cách công ty rất xa nên tôi đi xe buýt.",a:T8[0],alt:[]},{v:"Vì ngày mai có kỳ thi nên anh ấy vẫn đang học.",a:T8[3],alt:[]}]}
+];
+const norm=s=>s.replace(/[\s，。？！、“”"'.,?!：；:;…—-]/g,"");
+const $=s=>document.querySelector(s), app=$("#app"), tabs=$("#tabs");
+const MEAN={};PARTS.forEach(P=>P.it.forEach(q=>{if(q.v&&q.a)[q.a,...(q.alt||[])].forEach(x=>MEAN[norm(x)]=q.v)}));
+const DICT=[...L1,...BW].filter(([a])=>a&&/[\u4e00-\u9fff]/.test(a)).sort((x,y)=>y[0].length-x[0].length);
+const gloss=s=>DICT.filter(([a])=>a!==s&&s.includes(a)).map(([a,v])=>`${a} (${py(a)}) = ${v}`).join(" · ");
+let N=0,html="";
+PARTS.forEach((P,pi)=>{
+html+=`<section data-p="${pi}" ${pi?"hidden":""}><h2>${P.h}</h2><p class="note">${P.n}</p>${P.bank?`<p class="bankw">${P.bank}</p>`:""}`;
+P.it.forEach(q=>{N++;
+const pin=py(q.a.replace(/[“”]/g,""));
+let pr="";
+if(q.p)pr=`<div class="pr req" style="color:var(--acc)">${pin}</div>`+(q.v?`<div class="vi">${q.v}</div>`:"");
+else if(q.v)pr=`<div class="vi">${q.v}</div>`;
+else if(q.w)pr=q.w.map(w=>`<span class="chip">${w}</span>`).join("");
+else if(q.s)pr=`<div class="hz">${q.s.replace("_",'<span class="blank"></span>')}</div>`;
+html+=`<div class="q" data-i="${N}" data-a="${[q.a,...(q.alt||[])].map(norm).join("|")}"><span class="n">${N}</span>${pr}<input type="text" lang="zh" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Câu ${N}">${q.p?"":`<div class="py opt">${pin}</div>`}<button class="rvb" type="button">👁 Đáp án</button><div class="an"><div class="hz">${q.a}</div><div class="p2">${pin}</div>${MEAN[norm(q.a)]?`<div class="mn">${MEAN[norm(q.a)]}</div>`:""}<div class="gl">${gloss(q.a)}</div></div></div>`;
+});
+html+="</section>";
+tabs.insertAdjacentHTML("beforeend",`<button data-t="${pi}" class="${pi?"":"on"}">${P.t}</button>`);
+});
+app.innerHTML=html;
+function score(){$("#sc").textContent=document.querySelectorAll(".q.ok").length+"/"+N}
+app.addEventListener("input",e=>{const q=e.target.closest(".q");const ans=q.dataset.a.split("|");const v=norm(e.target.value);
+if(ans.includes(v)){q.className="q ok"}else q.className="q";score()});
+app.addEventListener("keydown",e=>{if(e.key!=="Enter"||e.isComposing)return;const q=e.target.closest(".q");if(!q)return;
+if(!q.classList.contains("ok"))q.classList.add("bad");
+const nx=q.nextElementSibling;if(nx&&nx.querySelector("input"))nx.querySelector("input").focus()});
+tabs.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+tabs.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
+document.querySelectorAll("section").forEach(s=>s.hidden=s.dataset.p!==b.dataset.t);scrollTo(0,0)});
+score();
+const KEY="hsk2_progress_v1";
+let st={a:{},bad:{},rv:{},t:0,py:0,an:0};
+try{const x=JSON.parse(localStorage.getItem(KEY)||"null");if(x)st=Object.assign(st,x)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+document.querySelectorAll(".q").forEach(q=>{const i=q.dataset.i,v=st.a[i];
+if(v){q.querySelector("input").value=v;if(q.dataset.a.split("|").includes(norm(v)))q.classList.add("ok")}
+if(!q.classList.contains("ok")&&st.bad[i])q.classList.add("bad");
+if(st.rv[i])q.classList.add("rv")});
+score();
+const tb=tabs.querySelector(`[data-t="${st.t}"]`);if(tb&&st.t)tb.click();
+$("#tpy").checked=!!st.py;$("#tan").checked=!!st.an;
+document.body.classList.toggle("spy",!!st.py);document.body.classList.toggle("san",!!st.an);
+$("#tpy").onchange=e=>{document.body.classList.toggle("spy",e.target.checked);st.py=+e.target.checked;save()};
+$("#tan").onchange=e=>{document.body.classList.toggle("san",e.target.checked);st.an=+e.target.checked;save()};
+app.addEventListener("input",e=>{const q=e.target.closest(".q");if(!q)return;const i=q.dataset.i;
+if(e.target.value)st.a[i]=e.target.value;else delete st.a[i];
+if(q.classList.contains("ok"))delete st.bad[i];save()});
+app.addEventListener("keydown",e=>{if(e.key!=="Enter"||e.isComposing)return;const q=e.target.closest(".q");if(!q)return;
+if(q.classList.contains("bad"))st.bad[q.dataset.i]=1;save()});
+app.addEventListener("click",e=>{const b=e.target.closest(".rvb");if(!b)return;const q=b.closest(".q");
+q.classList.toggle("rv");if(q.classList.contains("rv"))st.rv[q.dataset.i]=1;else delete st.rv[q.dataset.i];save()});
+tabs.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;st.t=+b.dataset.t;save()});
+let rc=0;$("#rst").onclick=e=>{if(!rc){rc=1;e.target.textContent="Bấm lần nữa để xóa hết";setTimeout(()=>{rc=0;e.target.textContent="Xóa tiến độ"},3000);return}
+try{localStorage.removeItem(KEY)}catch(x){}location.reload()};
+</script>
+</body>
+</html>
